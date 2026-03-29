@@ -10,5 +10,10 @@
       "mcp__claude_ai_Google_Calendar__*",
       "mcp__claude_ai_Slack__*"
     ]
-  }
+  },
+  "statusLine": {
+    "type": "command",
+    "command": "bash /Users/Naoki/.claude/statusline-command.sh"
+  },
+  "effortLevel": "high"
 }

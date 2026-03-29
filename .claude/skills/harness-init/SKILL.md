@@ -19,7 +19,11 @@ allowed-tools: Bash, Read, Write, Edit, Glob
 
 1. OS検出（Windows / macOS / Linux）
 2. `~/.claude/` ディレクトリの存在確認
-3. 既存の `~/.claude/CLAUDE.md`、`~/.claude/settings.json`、`~/.claude/skills` の状態を確認
+3. 既存ファイルの状態を確認:
+   - `~/.claude/CLAUDE.md`
+   - `~/.claude/settings.json`
+   - `~/.claude/statusline-command.sh`
+   - `~/.claude/skills`
    - 既にシンボリックリンクなら「設定済み」として報告
    - 通常ファイル/ディレクトリなら削除してリンクを張り直す（オーナーに確認）
    - 存在しなければ新規作成
@@ -32,6 +36,7 @@ allowed-tools: Bash, Read, Write, Edit, Glob
 ```bash
 ln -sf <repo>/dotfiles/CLAUDE.md ~/.claude/CLAUDE.md
 ln -sf <repo>/dotfiles/settings.json ~/.claude/settings.json
+ln -sf <repo>/dotfiles/statusline-command.sh ~/.claude/statusline-command.sh
 ln -sfn <repo>/skills ~/.claude/skills
 ```
 
@@ -40,6 +45,7 @@ ln -sfn <repo>/skills ~/.claude/skills
 export MSYS=winsymlinks:nativestrict
 ln -s <repo>/dotfiles/CLAUDE.md ~/.claude/CLAUDE.md
 ln -s <repo>/dotfiles/settings.json ~/.claude/settings.json
+ln -s <repo>/dotfiles/statusline-command.sh ~/.claude/statusline-command.sh
 ln -s <repo>/skills ~/.claude/skills
 ```
 

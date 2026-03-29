@@ -3,14 +3,16 @@
 Claude CodeをTONaRiパーソナルエージェントとして拡張するハーネスプロジェクト。
 
 ## プロジェクト構造
-- `dotfiles/` — `~/.claude/` に配置するファイル群（CLAUDE.md, settings.json）
+- `dotfiles/` — `~/.claude/` に配置するファイル群（CLAUDE.md, settings.json, statusline-command.sh）
 - `skills/` — `~/.claude/skills/` に配置するスキル群
-- `.claude/skills/harness-init/` — インストーラスキル（プロジェクトレベル）
+- `.claude/skills/harness-init/` — Claude Code設定のデプロイ（プロジェクトレベル）
+- `.claude/skills/terminal-init/` — ターミナル環境構築（プロジェクトレベル）
 
 ## 開発フロー
 1. `skills/` や `dotfiles/` のファイルを編集
-2. `/harness-init` で `~/.claude/` に反映
-3. 別プロジェクトで動作確認
+2. `/harness-init` で Claude Code 設定を `~/.claude/` に反映
+3. `/terminal-init` でターミナル環境（WezTerm + Zellij）をセットアップ
+4. 別プロジェクトで動作確認
 
 ## 外部連携
 | サービス | 方式 |
