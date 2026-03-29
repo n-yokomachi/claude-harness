@@ -7,6 +7,7 @@ config.macos_window_background_blur = 0
 config.window_decorations = "RESIZE"
 
 -- Font
+config.font = wezterm.font("UDEV Gothic 35NFLG")
 config.font_size = 14.0
 
 -- Bold is bright
