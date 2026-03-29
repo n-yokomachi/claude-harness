@@ -1,0 +1,23 @@
+# claude-harness
+
+Claude CodeをTONaRiパーソナルエージェントとして拡張するハーネスプロジェクト。
+
+## プロジェクト構造
+- `dotfiles/` — `~/.claude/` に配置するファイル群（CLAUDE.md, settings.json）
+- `skills/` — `~/.claude/skills/` に配置するスキル群
+- `.claude/skills/harness-init/` — インストーラスキル（プロジェクトレベル）
+
+## 開発フロー
+1. `skills/` や `dotfiles/` のファイルを編集
+2. `/harness-init` で `~/.claude/` に反映
+3. 別プロジェクトで動作確認
+
+## 外部連携
+| サービス | 方式 |
+|---------|------|
+| Gmail | クラウドMCP（Anthropic提供） |
+| Google Calendar | クラウドMCP（Anthropic提供） |
+| Slack | クラウドMCP（Anthropic Slack Connector） |
+
+## シークレット管理
+settings.jsonにシークレットは書かない。シェルプロファイル（~/.bashrc, ~/.zshrc）でexportする。
