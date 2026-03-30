@@ -8,7 +8,9 @@
       "WebFetch(domain:*)",
       "mcp__claude_ai_Gmail__*",
       "mcp__claude_ai_Google_Calendar__*",
-      "mcp__claude_ai_Slack__*"
+      "mcp__claude_ai_Slack__*",
+      "Bash(git diff:*)",
+      "Bash(gh pr:*)"
     ]
   },
   "statusLine": {
