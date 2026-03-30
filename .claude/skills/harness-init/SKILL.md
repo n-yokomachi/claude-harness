@@ -23,6 +23,7 @@ allowed-tools: Bash, Read, Write, Edit, Glob
    - `~/.claude/CLAUDE.md`
    - `~/.claude/settings.json`
    - `~/.claude/statusline-command.sh`
+   - `~/.claude/notify.sh`
    - `~/.claude/skills`
    - 既にシンボリックリンクなら「設定済み」として報告
    - 通常ファイル/ディレクトリなら削除してリンクを張り直す（オーナーに確認）
@@ -37,6 +38,7 @@ allowed-tools: Bash, Read, Write, Edit, Glob
 ln -sf <repo>/dotfiles/CLAUDE.md ~/.claude/CLAUDE.md
 ln -sf <repo>/dotfiles/settings.json ~/.claude/settings.json
 ln -sf <repo>/dotfiles/statusline-command.sh ~/.claude/statusline-command.sh
+ln -sf <repo>/dotfiles/notify.sh ~/.claude/notify.sh
 ln -sfn <repo>/skills ~/.claude/skills
 ```
 
@@ -46,6 +48,7 @@ export MSYS=winsymlinks:nativestrict
 ln -s <repo>/dotfiles/CLAUDE.md ~/.claude/CLAUDE.md
 ln -s <repo>/dotfiles/settings.json ~/.claude/settings.json
 ln -s <repo>/dotfiles/statusline-command.sh ~/.claude/statusline-command.sh
+ln -s <repo>/dotfiles/notify.sh ~/.claude/notify.sh
 ln -s <repo>/skills ~/.claude/skills
 ```
 

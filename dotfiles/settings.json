@@ -13,7 +13,42 @@
   },
   "statusLine": {
     "type": "command",
-    "command": "bash /Users/Naoki/.claude/statusline-command.sh"
+    "command": "bash ~/.claude/statusline-command.sh"
+  },
+  "hooks": {
+    "Stop": [
+      {
+        "matcher": "",
+        "hooks": [
+          {
+            "type": "command",
+            "command": "~/.claude/notify.sh stop"
+          }
+        ]
+      }
+    ],
+    "PreToolUse": [
+      {
+        "matcher": "AskUserQuestion",
+        "hooks": [
+          {
+            "type": "command",
+            "command": "~/.claude/notify.sh idle_prompt"
+          }
+        ]
+      }
+    ],
+    "Notification": [
+      {
+        "matcher": "",
+        "hooks": [
+          {
+            "type": "command",
+            "command": "~/.claude/notify.sh $CLAUDE_NOTIFICATION_TYPE"
+          }
+        ]
+      }
+    ]
   },
   "effortLevel": "high"
 }
