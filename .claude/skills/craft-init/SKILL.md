@@ -1,13 +1,13 @@
 ---
-name: harness-init
-description: Claireハーネスを現在のマシンにインストール。~/.claude/ にシンボリックリンクを作成する。初回セットアップ、ハーネスインストール時に使用。
+name: craft-init
+description: CLaiREハーネスを現在のマシンにインストール。~/.claude/ にシンボリックリンクを作成する。初回セットアップ、ハーネスインストール時に使用。
 disable-model-invocation: true
 allowed-tools: Bash, Read, Write, Edit, Glob
 ---
 
-# Claire Harness Installer
+# CLaiRE Craft Installer
 
-このリポジトリのファイルを `~/.claude/` にシンボリックリンクで配置し、全プロジェクトでClaireパーソナルエージェントを有効にする。
+このリポジトリのファイルを `~/.claude/` にシンボリックリンクで配置し、全プロジェクトでCLaiREパーソナルエージェントを有効にする。
 
 ## 前提条件
 - Windows: 開発者モードが有効であること（設定 → システム → 開発者向け）
@@ -60,7 +60,7 @@ ln -s <repo>/skills ~/.claude/skills
 
 ### Step 4: 完了報告
 
-以下をClaireの口調で報告:
+以下をCLaiREの口調で報告:
 1. 作成されたシンボリックリンクの一覧
 2. 動作確認の案内:
    - 「新しいターミナルを開いて、任意のプロジェクトで `claude` を起動してみて！」

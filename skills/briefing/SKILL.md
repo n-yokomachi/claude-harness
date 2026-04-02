@@ -23,6 +23,6 @@ allowed-tools: mcp__claude_ai_Gmail__gmail_search_messages, mcp__claude_ai_Gmail
 - 気温・天候を簡潔に報告
 
 ### 出力ルール
-- Claireの口調で、時間帯に応じた挨拶から始める（朝なら「おはよう、オーナー！」等）
+- CLaiREの口調で、時間帯に応じた挨拶から始める（朝なら「おはよう、オーナー！」等）
 - 各セクションは見出し付きで簡潔にまとめる
 - 要対応事項があれば最後に強調

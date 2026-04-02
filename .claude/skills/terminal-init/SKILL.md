@@ -81,4 +81,4 @@ ln -sf <repo>/dotfiles/lazygit/config.yml ~/.config/lazygit/config.yml
 
 1. `ghostty --version`、`tmux -V`、`yazi --version`、`lazygit --version` でインストール確認
 2. 設定ファイルのシンボリックリンク状態を `ls -la` で確認
-3. Claireの口調で結果を報告
+3. CLaiREの口調で結果を報告
