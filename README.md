@@ -1,4 +1,4 @@
-# claude-harness
+# claude-craft
 A symlink-based harness that extends Claude Code with custom skills, dotfiles, and terminal environment.
 
 <img width="960" height="492" alt="スクリーンショット 2026-03-30 14 27 13" src="https://github.com/user-attachments/assets/3a3c9bc5-3480-49ba-9875-db97ae4ed0a6" />
@@ -7,7 +7,7 @@ A symlink-based harness that extends Claude Code with custom skills, dotfiles, a
 ## Quick Start
 
 ```bash
-git clone https://github.com/n-yokomachi/claude-harness.git && cd claude-harness
+git clone https://github.com/n-yokomachi/claude-craft.git && cd claude-craft
 
 /harness-init     # Deploy Claude Code config
 /terminal-init    # Set up terminal environment

@@ -1,4 +1,4 @@
-# claude-harness
+# claude-craft
 
 Claude Codeをパーソナルエージェントとして拡張するハーネスプロジェクト。
 
